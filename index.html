@@ -36,201 +36,241 @@
                 </div>
             </div>
             <div class="flex items-center gap-6">
-                <div class="flex bg-[#F4F7FF] rounded-lg w-14">
+                <div class="flex gap-2 bg-[#F4F7FF] rounded-lg w-14">
                     <img class="w-6" src="./assets/checkbox.png" alt="">
-                    <h4>23</h4>
+
+                    <h4><span id="twoThree">23</span></h4>
 
 
                 </div>
-                <img class="w-6" src="./assets/theme-btn.png" alt="">
+                <img id="theme-btn" class="w-6" src="./assets/theme-btn.png" alt="">
             </div>
           </div>
         </nav>
     </header>
 
-    <main class="w-[1020px] h-[900px] mt-8 bg-white p-10">
-        <section class="">
+    <main class="flex  gap-4">
+        <!-- mota layer -->
+        <section class="w-[1020px] h-[900px] mt-8 bg-white p-10">
+            
+             <section class="">
 
-           <div class="flex flex-1 gap-3">
+    <div class="flex flex-1 gap-3">
 
 
-            <div class="w-[250px] h-[100px] bg-[#F4F7FF] justify-evenly  items-center flex gap-5">
-                <div class=" rounded-full w-[50px] flex justify-center items-center h-[50px] bg-white">
-                    <div>
-                        <img class="w-[25px]" src="./assets/checkbox.png" alt="">
-                    </div>
-                </div>
-                <!-- flex flex-col justify-center items-center -->
-                <div class=" ">
-                    <p>Task Assigned</p>
-                    <h3 id="zeroFive">05</h3>
-                </div>
+     <div class="w-[250px] h-[100px] bg-[#F4F7FF] justify-evenly  items-center flex gap-5">
+         <div class=" rounded-full w-[50px] flex justify-center items-center h-[50px] bg-white">
+             <div>
+                 <img class="w-[25px]" src="./assets/checkbox.png" alt="">
+             </div>
+         </div>
+         <!-- flex flex-col justify-center items-center -->
+         <div class=" ">
+             <p>Task Assigned</p>
+             <h3 ><span id="zeroFive"> 6 </span></h3>
+         </div>
 
-            </div>
+     </div>
 
-            <div class="w-[400px] h-[100px] bg-gradient-to-l from-[#9BA8F8] via-[#6C7FFA] to-[#3752FD] rounded-lg flex items-center justify-around">
-                <div>
-                    <img src="./assets/board.png" alt="">
-                </div>
-                <div>
-                    <h2 class="text-white">Discover Something <br> New Today!</h2>
-                </div>
+     <div id="beguniBox" class=" w-[400px] h-[100px] bg-gradient-to-l from-[#9BA8F8] via-[#6C7FFA] to-[#3752FD] rounded-lg flex items-center justify-around">
+         <div>
+             <img src="./assets/board.png" alt="">
+         </div>
+         <div>
+             <h2 class="text-white">Discover Something <br> New Today!</h2>
+         </div>
 
-            </div>
+     </div>
 
-            <div class="w-[250px] h-[100px] bg-[#F4F7FF] justify-evenly  items-center flex gap-5">
-                <div class=" rounded-full w-[50px] flex justify-center items-center h-[50px] bg-white">
-                    <div>
-                        <img class="w-[25px]" src="./assets/calender.png" alt="">
-                    </div>
-                </div>
-                <!-- flex flex-col justify-center items-center -->
-                <div class=" ">
-                    <p id="dateTime"></p>
-                    
-                </div>
+     <div class="w-[250px] h-[100px] bg-[#F4F7FF] justify-evenly  items-center flex gap-5">
+         <div class=" rounded-full w-[50px] flex justify-center items-center h-[50px] bg-white">
+             <div>
+                 <img class="w-[25px]" src="./assets/calender.png" alt="">
+             </div>
+         </div>
+         <!-- flex flex-col justify-center items-center -->
+         <div class=" ">
+             <p id ="dateTime">25 february</p>
+             
+         </div>
 
-            </div>
-        </div>
+     </div>
+ </div>
+             </section>
+             <section class="mt-4 w-[350px] h-[900px] grid grid-cols-[300px,300px,300px]  grid-rows-[250px,200px] gap-6">
+     <!-- single box -->
+      <div  class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
+         <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
+             <h1>ShopEase</h1>
+         </div>
+         <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
 
+         <div  class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
+             <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
+
+         </div>
+         <div   class="flex justify-evenly mt-3 ">
+             <div>
+                 <p class="text-gray-400"> Deadline</p>
+                 <p id="dateTime"></p>
+             </div>
+             <div>
+                 <button id="completedButton"  class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
+             </div>
+         </div>
+
+      </div>
+        <!-- single box -->
+        <div  class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
+         <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
+             <h1>ShopEase</h1>
+         </div>
+         <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
+
+         <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
+             <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
+
+         </div>
+         <div class="flex justify-evenly mt-3 ">
+             <div>
+                 <p class="text-gray-400"> Deadline</p>
+                 <p id="dateTime"></p>
+             </div>
+             <div>
+                 <button id="completedButton" onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
+             </div>
+         </div>
+
+      </div>
+        <!-- single box -->
+        <div  class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
+         <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
+             <h1>ShopEase</h1>
+         </div>
+         <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
+
+         <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
+             <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
+
+         </div>
+         <div class="flex justify-evenly mt-3 ">
+             <div>
+                 <p class="text-gray-400"> Deadline</p>
+                 <p id="dateTime"></p>
+             </div>
+             <div>
+                 <button id="completedButton" onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
+             </div>
+         </div>
+
+      </div>
+        <!-- single box -->
+        <div  class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
+         <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
+             <h1>ShopEase</h1>
+         </div>
+         <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
+
+         <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
+             <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
+
+         </div>
+         <div class="flex justify-evenly mt-3 ">
+             <div>
+                 <p class="text-gray-400"> Deadline</p>
+                 <p id="dateTime"></p>
+             </div>
+             <div>
+                 <button id="completedButton" onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
+             </div>
+         </div>
+
+      </div>
+        <!-- single box -->
+        <div  class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
+         <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
+             <h1>ShopEase</h1>
+         </div>
+         <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
+
+         <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
+             <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
+
+         </div>
+         <div class="flex justify-evenly mt-3 ">
+             <div>
+                 <p class="text-gray-400"> Deadline</p>
+                 <p id="dateTime"></p>
+             </div>
+             <div>
+                 <button id="completedButton" onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
+             </div>
+         </div>
+
+      </div>
+        <!-- single box -->
+        <div  class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
+         <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
+             <h1>ShopEase</h1>
+         </div>
+         <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
+
+         <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
+             <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
+
+         </div>
+         <div class="flex justify-evenly mt-3 ">
+             <div>
+                 <p class="text-gray-400"> Deadline</p>
+                 <p id="dateTime"></p>
+             </div>
+             <div>
+                 <button id="completedButton" onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
+             </div>
+         </div>
+
+      </div>
+             </section>
+
+
+            </section>
+        <!-- cikon layer -->
+        <section class=" w-[280px] h-[900px] mt-8 bg-white ">
+           
+         <div class="flex gap-4 justify-center p-4">
+            <img src="./assets/activity.png" alt="">
+            <h3>Activity Log</h3>
+         </div>
+
+           <div class="ml-20">
+                 <button id="clearHist" onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">Clear History</button>
+             </div>
+         </div>
+
+         <div class=" activity-log flex flex-col justify-center items-center mt-4 gap-3">
+             <!-- <div class="bg-[#F4F7FF] w-[200px] h-[40px] text-[9px] "><p>You have Complete The Task Add Dark Mode at <span id="dateTime"></span></p></div>
+             <div class="bg-[#F4F7FF] w-[200px] h-[40px] text-[9px]"><p>You have Complete The Task Add Dark Mode at <span id="dateTime"></span></p></div>
+
+             <div class="bg-[#F4F7FF] w-[200px] h-[40px] text-[9px]"><p>You have Complete The Task Add Dark Mode at <span id="dateTime"></span></p></div>
+
+             <div class="bg-[#F4F7FF] w-[200px] h-[40px] text-[9px]"><p>You have Complete The Task Add Dark Mode at <span id="dateTime"></span></p></div>
+
+             <div class="bg-[#F4F7FF] w-[200px] h-[40px] text-[9px]"><p>You have Complete The Task Add Dark Mode at <span id="dateTime"></span></p></div>
+             <div class="bg-[#F4F7FF] w-[200px] h-[40px] text-[9px]"><p>You have Complete The Task Add Dark Mode at <span id="dateTime"></span></p></div>
+              -->
+          </div>
         </section>
-<!-- small layer  -->
-        <section class="mt-4 w-[350px] h-[900px] grid grid-cols-[300px,300px,300px]  grid-rows-[250px,200px] gap-6">
-            <!-- single box -->
-             <div class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
-                <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
-                    <h1>ShopEase</h1>
-                </div>
-                <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
-
-                <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
-                    <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
-
-                </div>
-                <div class="flex justify-evenly mt-3 ">
-                    <div>
-                        <p class="text-gray-400"> Deadline</p>
-                        <p id="dateTime"></p>
-                    </div>
-                    <div>
-                        <button onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
-                    </div>
-                </div>
-
-             </div>
-               <!-- single box -->
-               <div class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
-                <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
-                    <h1>ShopEase</h1>
-                </div>
-                <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
-
-                <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
-                    <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
-
-                </div>
-                <div class="flex justify-evenly mt-3 ">
-                    <div>
-                        <p class="text-gray-400"> Deadline</p>
-                        <p id="dateTime"></p>
-                    </div>
-                    <div>
-                        <button onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
-                    </div>
-                </div>
-
-             </div>
-               <!-- single box -->
-               <div class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
-                <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
-                    <h1>ShopEase</h1>
-                </div>
-                <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
-
-                <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
-                    <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
-
-                </div>
-                <div class="flex justify-evenly mt-3 ">
-                    <div>
-                        <p class="text-gray-400"> Deadline</p>
-                        <p id="dateTime"></p>
-                    </div>
-                    <div>
-                        <button onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
-                    </div>
-                </div>
-
-             </div>
-               <!-- single box -->
-               <div class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
-                <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
-                    <h1>ShopEase</h1>
-                </div>
-                <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
-
-                <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
-                    <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
-
-                </div>
-                <div class="flex justify-evenly mt-3 ">
-                    <div>
-                        <p class="text-gray-400"> Deadline</p>
-                        <p id="dateTime"></p>
-                    </div>
-                    <div>
-                        <button onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
-                    </div>
-                </div>
-
-             </div>
-               <!-- single box -->
-               <div class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
-                <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
-                    <h1>ShopEase</h1>
-                </div>
-                <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
-
-                <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
-                    <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
-
-                </div>
-                <div class="flex justify-evenly mt-3 ">
-                    <div>
-                        <p class="text-gray-400"> Deadline</p>
-                        <p id="dateTime"></p>
-                    </div>
-                    <div>
-                        <button onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
-                    </div>
-                </div>
-
-             </div>
-               <!-- single box -->
-               <div class="w-[320px] h-[250px] bg-[#F4F7FF] p-2 rounded-lg">
-                <div class="bg-white w-[100px] flex justify-center items-center h-[29px] rounded-md ml-5 ">
-                    <h1>ShopEase</h1>
-                </div>
-                <h1 class="text-2xl ">Fix Mobile Button Issue </h1>
-
-                <div class="w-[270px] ml-4 h-[70px] bg-white rounded-lg p-3 mt-6">
-                    <p class="text-gray-400 text-[12px] ">Debug using Chrome DevTools, check for overlapping </p>
-
-                </div>
-                <div class="flex justify-evenly mt-3 ">
-                    <div>
-                        <p class="text-gray-400"> Deadline</p>
-                        <p id="dateTime"></p>
-                    </div>
-                    <div>
-                        <button onclick="" class=" bg-[#3752FD] rounded-md text-white w-[150px] h-[30px]  ">compledted</button>
-                    </div>
-                </div>
-
-             </div>
-
-        </section>
+       
     </main>
-    
+    <script src="./utilites/linkingPage.js"></script>
+    <script src="./utilites/cmplteBtn.js"></script>
+    <script src=""></script>
+
+    <script src="./utilites/TimeManage.js"></script>
+
+    <script src=""></script>
+    <script src=""></script>
+
 </body>
 </html>
+

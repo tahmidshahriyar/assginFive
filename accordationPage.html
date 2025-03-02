@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- popins code -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <style>
+          .poppins-light {
+             font-family: "Poppins", sans-serif;
+             font-weight: 400;         
+             font-style: normal;
+        }
+      </style>
+      <title>Document</title>
+      <!-- daisy ui cdn url -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css"/>
+      <!-- tailwind css cdn link -->
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mt-6">
+        <nav class="bg-white shadow-lg rounded-lg h-12   ">
+            <div class="flex justify-between items-center">
+                 <!-- dev board -->
+                 <div class="flex  items-end ">
+                  <div>
+                      <img class="w-8" src="./assets/logo.png" alt="">
+                  </div>
+                  <div>
+                      <h1><span>Dev</span><span class="font-bold
+                          ">Board</span></h1>
+                  </div>
+              </div>
+              <div class=" w-32 ">
+                <button id="back-btn" class="btn bg-purple-800 text-white ">back to desk</button>
+
+              </div>
+            </div>
+          </nav>
+          <main>
+            <h3 class="text-center font-bold text-xl mt-5">Blogs</h3>
+
+            <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title font-semibold">What is the difference between innerHTML, innerText, and textContent ?</div>
+                <div class="collapse-content text-sm">textContents is all text contained by an element and all its children that are for formatting purposes only. innerText returns all text contained by an element
+                   and all its child elements. innerHtml returns all text, including html tags, that is contained by an element.</div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">What is event delegation in the DOM?</div>
+                <div class="collapse-content text-sm"> support the event managers and are usually the first port of call for event attendees      </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold"> What is event bubbling in the DOM?</div>
+                <div class="collapse-content text-sm">Event bubbling is a type of DOM event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element
+                   in the same nesting hierarchy till it reaches the outermost DOM element or document object</div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">How do you create, add, and remove elements using JavaScript?</div>
+                <div class="collapse-content text-sm">to add a new tag we will set the innerHTML property of a parent element to a string
+                   containing the HTML markup of the tag we want to add. </div>
+              </div>
+              
+          </main>
+   
+    </header>
+    <script src="./utilites/linkingPage2.js"></script>
+</body>
+</html>
